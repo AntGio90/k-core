@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED=1
 ENV WATCHFILES_FORCE_POLLING=true
 
 ### SYSTEM SETUP ###
-RUN apt-get -y update && apt-get install -y curl build-essential fastjar libmagic-mgc libmagic1 mime-support git libffi-dev libssl-dev && \
+RUN apt-get -y update && apt-get install -y curl build-essential fastjar libmagic-mgc libmagic1 mime-support && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
