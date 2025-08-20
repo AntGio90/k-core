@@ -1,0 +1,62 @@
+{
+  "edition": "2018",
+  "part": 8,
+  "name": "Supporting processes",
+  "work_products": [
+    "Configuration Management Records",
+    "Change Management Records",
+    "Verification and Validation Reports",
+    "Tool Qualification Packages",
+    "Proven-in-Use Evidence (if applicable)"
+  ],
+  "checks": [
+    {
+      "id": "P8-CFG-001",
+      "title": "Configuration management in place",
+      "description": "Verify configuration management identifies baselines, items, and ensures integrity of safety artifacts.",
+      "clause": "Part 8 (configuration management)",
+      "section": "requirements",
+      "patterns": ["configuration management", "baseline", "CM plan", "configuration item"]
+    },
+    {
+      "id": "P8-CHG-002",
+      "title": "Change management process",
+      "description": "Confirm change management evaluates safety impact and maintains traceability.",
+      "clause": "Part 8 (change management)",
+      "section": "requirements",
+      "patterns": ["change request", "impact analysis", "traceability", "change control board"]
+    },
+    {
+      "id": "P8-TOOL-003",
+      "title": "Software tool qualification (if needed)",
+      "description": "Check tool qualification evidence exists where tool confidence level requires it.",
+      "clause": "Part 8 (tool qualification)",
+      "section": "requirements",
+      "patterns": ["tool qualification", "TCL", "confidence level", "tool chain"]
+    },
+    {
+      "id": "P8-PIU-004",
+      "title": "Proven-in-use argument (if applied)",
+      "description": "If PIU used, verify operational history, environment equivalence, and failure data support the claim.",
+      "clause": "Part 8 (proven-in-use)",
+      "section": "requirements",
+      "patterns": ["proven-in-use", "operational history", "field data", "failure rate"]
+    },
+    {
+      "id": "P8-DOC-005",
+      "title": "Documentation management and retention",
+      "description": "Ensure documentation is controlled, reviewed, and retained to support assessments.",
+      "clause": "Part 8 (documentation)",
+      "section": "requirements",
+      "patterns": ["document control", "review record", "retention", "sign-off"]
+    },
+    {
+      "id": "P8-VV-006",
+      "title": "Verification and validation evidence",
+      "description": "Confirm V&V activities planned and results recorded with objective evidence.",
+      "clause": "Part 8 (verification/validation)",
+      "section": "tests",
+      "patterns": ["verification", "validation", "test report", "evidence"]
+    }
+  ]
+}

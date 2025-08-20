@@ -1,0 +1,18 @@
+{
+  "accepted_standards": ["ISO 26262", "IEC 61508"],
+  "report_format": "json",
+  "encryption_enabled": true,
+  "requirement_id_hints": ["REQ-", "SR-", "ASIL-", "FSR-"],
+  "expected_mappings": {
+    "requirements": ["id", "text", "source"],
+    "fmea": ["id", "requirement_ids", "severity", "occurrence", "detection"],
+    "tests": ["id", "requirement_ids", "status", "results"]
+  },
+  "expected_sections": ["requirements", "fmea", "tests"],
+  "access_roles": ["FuSaEngineer", "VnV", "Compliance"],
+  "storage_dir": "storage",
+  "retention_reports": 25,
+  "use_reference_corpus": true,
+  "reference_dir": "ISO26262",
+  "iso_edition": "2018"
+}

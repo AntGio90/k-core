@@ -1,0 +1,54 @@
+{
+  "edition": "2018",
+  "part": 9,
+  "name": "ASIL-oriented and safety-oriented analyses",
+  "work_products": [
+    "System/Hardware/Software Safety Analyses",
+    "Dependent Failures Analysis (DFA)",
+    "Common Cause Analysis (CCA)",
+    "Fault Tree Analysis (FTA)",
+    "FMEA / FMEDA (cross-referenced)"
+  ],
+  "checks": [
+    {
+      "id": "P9-FTA-001",
+      "title": "Fault Tree Analysis performed for safety goals",
+      "description": "Verify FTA exists to analyze causes leading to safety goal violation and identify safety mechanisms.",
+      "clause": "Part 9 (FTA)",
+      "section": "fmea",
+      "patterns": ["fault tree", "FTA", "top event", "minimal cut set"]
+    },
+    {
+      "id": "P9-FMEA-002",
+      "title": "FMEA consistent across system/HW/SW",
+      "description": "Check FMEA addresses relevant failure modes and is consistent across levels with traceability.",
+      "clause": "Part 9 (FMEA)",
+      "section": "fmea",
+      "patterns": ["FMEA", "failure mode", "effect", "cause", "RPN"]
+    },
+    {
+      "id": "P9-FMEDA-003",
+      "title": "FMEDA supports quantitative targets",
+      "description": "Confirm FMEDA supports required DC, SPFM/LFM/PMHF targets where applicable.",
+      "clause": "Part 9 (FMEDA linkage)",
+      "section": "fmea",
+      "patterns": ["FMEDA", "diagnostic coverage", "SPFM", "LFM", "PMHF"]
+    },
+    {
+      "id": "P9-DFA-004",
+      "title": "Dependent Failures Analysis (DFA)",
+      "description": "Verify DFA assesses independence assumptions, common resources, and cascading failures.",
+      "clause": "Part 9 (DFA)",
+      "section": "requirements",
+      "patterns": ["dependent failure", "DFA", "independence", "common resource"]
+    },
+    {
+      "id": "P9-CCA-005",
+      "title": "Common Cause Analysis (CCA)",
+      "description": "Check CCA addresses environmental and design common causes and mitigation strategies.",
+      "clause": "Part 9 (CCA)",
+      "section": "requirements",
+      "patterns": ["common cause", "CCA", "mitigation", "environmental"]
+    }
+  ]
+}
