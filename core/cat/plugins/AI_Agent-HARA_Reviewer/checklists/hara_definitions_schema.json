@@ -1,0 +1,19 @@
+{
+  "checklist": [
+    { "id": "ID‑01", "description": "The Item Definition contains a clear high‑level functional description and purpose of the system." },
+    { "id": "ID‑02", "description": "System boundaries and all interfaces to other systems and users are explicitly specified." },
+    { "id": "ID‑03", "description": "All intended operating modes (normal, degraded, emergency, etc.) are listed." },
+    { "id": "ID‑04", "description": "Primary and secondary functions of the item, including safety‑related functions, are described." },
+    { "id": "ID‑05", "description": "External actors and their interactions with the item (driver, passengers, other vehicles, infrastructure) are identified." },
+    { "id": "ID‑06", "description": "Relevant operating scenarios (environment, traffic conditions, vehicle state, etc.) are covered." },
+    { "id": "ID‑07", "description": "For each scenario, plausible malfunctioning behaviours (fault conditions) of the item are considered." },
+    { "id": "ID‑08", "description": "At least one potential hazard is identified for every malfunction, describing its impact on vehicle safety." },
+    { "id": "ID‑09", "description": "Severity (S0–S3), Exposure (E0–E4) and Controllability (C0–C3) are estimated for every hazard." },
+    { "id": "ID‑10", "description": "ASIL (or QM) is derived correctly from the S/E/C combination according to the ISO 26262 table." },
+    { "id": "ID‑11", "description": "Safety Goals are formulated for all hazards classified with ASIL ≠ QM." },
+    { "id": "ID‑12", "description": "Each Safety Goal is traceable to its corresponding hazard and states the assigned ASIL." },
+    { "id": "ID‑13", "description": "The rationale for assigning S, E, C and the resulting ASIL is documented." },
+    { "id": "ID‑14", "description": "All Safety Assumptions (SA) and dependencies on other systems/components are listed." },
+    { "id": "ID‑15", "description": "The HARA documentation is complete, consistent and has been reviewed by an independent safety manager." }
+  ]
+}

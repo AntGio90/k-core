@@ -1,0 +1,9 @@
+{
+    "name": "[Kineton] FuSa AI Agent",
+    "version": "0.0.1",
+    "description": "A plugin that enables AI agents to assist in creating, reviewing, and validating ISO 26262 work products, ensuring compliance, traceability, and alignment with functional safety standards",
+    "author_name" : "Tonino De Nigris",
+    "author_url": "https://github.com/tondeni",
+    "plugin_url": "https://github.com/tondeni/-AI_Agent-FuSa_Role",
+    "thumb": "https://github.com/tondeni/-AI_Agent-FuSa_Role/blob/master/plugin_icon.jpg?raw=true"
+}
