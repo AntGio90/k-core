@@ -1,0 +1,82 @@
+{
+  "generation_info": {
+    "item_name": "item_definition_OBC",
+    "source_file": "item_definition_OBC.txt",
+    "timestamp": "2025-09-30T18:00:36.065572"
+  },
+  "summary": {
+    "item": "item_definition_OBC",
+    "functions_analyzed": 1,
+    "hazardous_events": 1,
+    "safety_goals": 1,
+    "fsrs_generated": 3,
+    "asil_distribution": {
+      "A": 3
+    },
+    "plugin_version": "2.0.0"
+  },
+  "hara_analysis": [
+    {
+      "hara_id": "HARA_001",
+      "hazardous_event": "Unintended or loss of function 'Primary Function'",
+      "operational_situation": "Driving at high speed in traffic",
+      "severity": "S2",
+      "exposure": "E3",
+      "controllability": "C2",
+      "asil": "A",
+      "linked_safety_goal_id": "SG_001"
+    }
+  ],
+  "safety_goals": [
+    {
+      "sg_id": "SG_001",
+      "text": "Ensure safe operation of the On-Board Charger (OBC) to prevent overheating and electrical hazards.",
+      "severity": "S2",
+      "exposure": "E3",
+      "controllability": "C2",
+      "asil": "A",
+      "rationale": "In the event of malfunction, overheating could lead to severe damage or injury (S2), the likelihood of this occurring during normal charging operations is medium (E3), and while cooling systems and alerts can help manage the situation, it may not always be controllable in a timely manner (C2)."
+    }
+  ],
+  "functional_safety_requirements": [
+    {
+      "fsr_id": "FSR_001",
+      "text": "The system shall detect overheating conditions in the On-Board Charger (OBC) when the temperature exceeds 85\u00b0C.",
+      "asil": "A",
+      "detection": "Temperature sensors shall monitor the OBC temperature continuously.",
+      "reaction": "If overheating is detected, the system shall initiate a controlled shutdown of the charging process.",
+      "timing_ms": 100,
+      "safe_state": "The system shall cease charging operations and switch to a standby state.",
+      "assumptions": "Temperature sensors are calibrated correctly and can operate within the specified range.",
+      "linked_safety_goal_id": "SG_001",
+      "allocation_hint": "Temperature monitoring subsystem",
+      "verification_strategy": "Testing of sensor response time and validation of shutdown sequence."
+    },
+    {
+      "fsr_id": "FSR_002",
+      "text": "The system shall react to electrical hazard conditions by isolating the OBC from the battery.",
+      "asil": "A",
+      "detection": "Current sensors shall monitor for abnormal current flow indicative of a short circuit or overload.",
+      "reaction": "Upon detection of an electrical hazard, the system shall disconnect the OBC from the battery within 50 ms.",
+      "timing_ms": 50,
+      "safe_state": "The system shall enter a state where no power is supplied to the OBC.",
+      "assumptions": "Current sensors are functioning and positioned correctly to detect faults.",
+      "linked_safety_goal_id": "SG_001",
+      "allocation_hint": "Current monitoring subsystem",
+      "verification_strategy": "Simulation of fault conditions to verify response time and disconnection effectiveness."
+    },
+    {
+      "fsr_id": "FSR_003",
+      "text": "The system shall provide a warning to the driver when an overheating condition is detected.",
+      "asil": "A",
+      "detection": "The system shall monitor temperature and initiate a warning when the temperature exceeds 80\u00b0C.",
+      "reaction": "A visual and audible alarm shall be triggered to alert the driver of the overheating condition.",
+      "timing_ms": 200,
+      "safe_state": "The system shall continue to operate but with a warning until the condition is resolved.",
+      "assumptions": "The warning system is operational and can effectively communicate with the driver.",
+      "linked_safety_goal_id": "SG_001",
+      "allocation_hint": "Driver Interface Module",
+      "verification_strategy": "User acceptance testing to ensure the effectiveness and clarity of the warning system."
+    }
+  ]
+}

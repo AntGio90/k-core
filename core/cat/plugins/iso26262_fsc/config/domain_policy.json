@@ -1,0 +1,41 @@
+{
+  "keywords": {
+    "critical": [
+      "brake",
+      "steer",
+      "accelerat",
+      "power",
+      "control"
+    ],
+    "safety": [
+      "monitor",
+      "detect",
+      "warning",
+      "alert"
+    ]
+  },
+  "timings_ms": {
+    "critical_detect": 300,
+    "critical_react": 700,
+    "safety_detect": 500,
+    "safety_react": 1000,
+    "generic_detect": 1000,
+    "generic_react": 2000
+  },
+  "safe_states": {
+    "critical": "Fail-safe with controlled shutdown",
+    "safety": "Maintain state with degraded functionality",
+    "generic": "Continue with reduced performance"
+  },
+  "allocation_hints": {
+    "critical": "HW+SW",
+    "safety": "SW",
+    "generic": "SW"
+  },
+  "verification": {
+    "A": "Review + Unit test",
+    "B": "Unit + Integration + Analysis",
+    "C": "Integration + Fault Injection + Analysis",
+    "D": "System test + Fault Injection + Formal/Analysis"
+  }
+}
