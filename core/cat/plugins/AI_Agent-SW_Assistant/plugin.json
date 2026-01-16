@@ -1,0 +1,10 @@
+{
+  "name": "[Kineton] ISO 26262 Software Work Products",
+  "version": "0.1.0",
+  "description": "Generates SW Safety Requirements Specification with HITL workflow.",
+  "author_name": "Codex",
+  "author_url": "",
+  "plugin_url": "",
+  "tags": "ISO26262, FuSa, Software",
+  "thumb": ""
+}

@@ -1,9 +1,0 @@
-{
-    "name": "[Kineton] Enable Reasoning",
-    "version": "0.0.1",
-    "description": "A plugin that enable / disable the reasonign text of LLM given to the user before the answer",
-    "author_name" : "Tonino De Nigris",
-    "author_url": "https://github.com/tondeni",
-    "plugin_url": "https://github.com/tondeni/-AI_Agent-_Enable-Reasoning",
-    "thumb": "https://github.com/tondeni/-AI_Agent-_Enable-Reasoning/blob/master/plugin_icon.jpg?raw=true"
-}

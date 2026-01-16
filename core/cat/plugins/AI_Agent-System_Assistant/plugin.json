@@ -1,0 +1,10 @@
+{
+  "name": "[Kineton] ISO 26262 System Work Products",
+  "version": "0.1.0",
+  "description": "Generates Technical Safety Concept with HITL workflow.",
+  "author_name": "Codex",
+  "author_url": "",
+  "plugin_url": "",
+  "tags": "ISO26262, FuSa, System",
+  "thumb": ""
+}

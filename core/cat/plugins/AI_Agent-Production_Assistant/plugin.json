@@ -1,0 +1,10 @@
+{
+  "name": "[Kineton] ISO 26262 Production and Operation Work Products",
+  "version": "0.1.0",
+  "description": "Generates Safety Manual work product with HITL workflow.",
+  "author_name": "Codex",
+  "author_url": "",
+  "plugin_url": "",
+  "tags": "ISO26262, FuSa, Production, Operation",
+  "thumb": ""
+}

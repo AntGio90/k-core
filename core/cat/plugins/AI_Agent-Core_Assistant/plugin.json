@@ -1,0 +1,10 @@
+{
+  "name": "[Kineton] ISO 26262 Core",
+  "version": "0.1.0",
+  "description": "Shared ISO 26262 artifact store, traceability, and HITL workflow services.",
+  "author_name": "Codex",
+  "author_url": "",
+  "plugin_url": "",
+  "tags": "ISO26262, FuSa, Functional Safety",
+  "thumb": ""
+}

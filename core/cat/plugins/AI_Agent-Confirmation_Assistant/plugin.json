@@ -1,0 +1,10 @@
+{
+  "name": "[Kineton] ISO 26262 Supporting and Confirmation Work Products",
+  "version": "0.1.0",
+  "description": "Generates Safety Case work product with HITL workflow.",
+  "author_name": "Codex",
+  "author_url": "",
+  "plugin_url": "",
+  "tags": "ISO26262, FuSa, Supporting, Confirmation",
+  "thumb": ""
+}

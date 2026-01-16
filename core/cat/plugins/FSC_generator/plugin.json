@@ -1,4 +1,0 @@
-{
-    "name": "ISO 26262 FSC Plugin",
-    "description": "Ingests Item Definition (ISO 26262 Part 3) and derives Functional Safety Concepts in compliance with ISO 26262"
-}

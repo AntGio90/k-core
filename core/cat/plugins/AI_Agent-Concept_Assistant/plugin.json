@@ -1,0 +1,10 @@
+{
+  "name": "[Kineton] ISO 26262 Concept Work Products",
+  "version": "0.1.0",
+  "description": "Generates Functional Safety Concept and HARA artifacts with HITL workflow.",
+  "author_name": "Codex",
+  "author_url": "",
+  "plugin_url": "",
+  "tags": "ISO26262, FuSa, Concept",
+  "thumb": ""
+}
